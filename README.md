@@ -3,7 +3,9 @@
 Thanks to fffuel.co!
 Wallpapers are extracted from https://fffuel.co/dddepth/ take a look at it!
 
-![image](https://github.com/JulianKominovic/sittly-wallpapers/assets/70329467/08d17743-a06c-4e95-bf1b-d9b9f3ccd8cc)
+![Frame 8](https://github.com/JulianKominovic/sittly-wallpapers/assets/70329467/24b35523-8386-46fe-a110-f8593940de71)
+
+
 
 ## 🤠 Features
 
