@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { Bs0Circle, BsDownload, BsGlobe } from 'react-icons/bs'
+import { BsCardImage, BsDownload, BsGlobe } from 'react-icons/bs'
 import {
   type ExtensionPages,
   type ExtensionMetadata
@@ -29,7 +29,7 @@ const pages: ExtensionPages = [
   {
     name: 'Wallpapers',
     route: '/wallpapers',
-    icon: <Bs0Circle />,
+    icon: <BsCardImage />,
     description: 'Choose between 350 AI generated wallpapers',
     component: () => {
       const setContextMenuOptions = useServices(
@@ -56,7 +56,7 @@ const pages: ExtensionPages = [
                       setWallpaper(imageUrl)
                     },
                     title: 'Set as wallpaper',
-                    icon: <Bs0Circle />,
+                    icon: <BsCardImage />,
                     description: 'Set this image as your wallpaper'
                   },
                   {
@@ -91,7 +91,7 @@ const pages: ExtensionPages = [
 const metadata: ExtensionMetadata = {
   name: 'Wallpapers',
   description: 'Choose between 350 AI generated wallpapers',
-  icon: <Bs0Circle />,
+  icon: <BsCardImage />,
   repoUrl: 'https://github.com/JulianKominovic/sittly-wallpapers'
 }
 

@@ -111,10 +111,10 @@ function IconBase(props) {
 __name(IconBase, "IconBase");
 
 // node_modules/.pnpm/react-icons@4.10.1_react@18.2.0/node_modules/react-icons/bs/index.esm.js
-function Bs0Circle(props) {
-  return GenIcon({ "tag": "svg", "attr": { "fill": "currentColor", "viewBox": "0 0 16 16" }, "child": [{ "tag": "path", "attr": { "d": "M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99ZM8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z" } }, { "tag": "path", "attr": { "d": "M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z" } }] })(props);
+function BsCardImage(props) {
+  return GenIcon({ "tag": "svg", "attr": { "fill": "currentColor", "viewBox": "0 0 16 16" }, "child": [{ "tag": "path", "attr": { "d": "M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" } }, { "tag": "path", "attr": { "d": "M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" } }] })(props);
 }
-__name(Bs0Circle, "Bs0Circle");
+__name(BsCardImage, "BsCardImage");
 function BsDownload(props) {
   return GenIcon({ "tag": "svg", "attr": { "fill": "currentColor", "viewBox": "0 0 16 16" }, "child": [{ "tag": "path", "attr": { "d": "M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" } }, { "tag": "path", "attr": { "d": "M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" } }] })(props);
 }
@@ -148,7 +148,7 @@ var pages = [
   {
     name: "Wallpapers",
     route: "/wallpapers",
-    icon: /* @__PURE__ */ React.createElement(Bs0Circle, null),
+    icon: /* @__PURE__ */ React.createElement(BsCardImage, null),
     description: "Choose between 350 AI generated wallpapers",
     component: () => {
       const setContextMenuOptions = useServices(
@@ -174,7 +174,7 @@ var pages = [
                       setWallpaper(imageUrl);
                     },
                     title: "Set as wallpaper",
-                    icon: /* @__PURE__ */ React.createElement(Bs0Circle, null),
+                    icon: /* @__PURE__ */ React.createElement(BsCardImage, null),
                     description: "Set this image as your wallpaper"
                   },
                   {
@@ -205,7 +205,7 @@ var pages = [
 var metadata = {
   name: "Wallpapers",
   description: "Choose between 350 AI generated wallpapers",
-  icon: /* @__PURE__ */ React.createElement(Bs0Circle, null),
+  icon: /* @__PURE__ */ React.createElement(BsCardImage, null),
   repoUrl: "https://github.com/JulianKominovic/sittly-wallpapers"
 };
 register({
