@@ -161,7 +161,7 @@ var pages = [
           id: "sittly-wallpapers",
           items: Array.from({ length: WALLPAPERS_LENGTH }).map((_, index) => {
             const padding = String(index + 1).padStart(3, "0");
-            const imageUrl = `https://raw.githubusercontent.com/JulianKominovic/sittly-wallpapers/main/assets/dddepth-${padding}.webp`;
+            const imageUrl = `https://raw.githubusercontent.com/JulianKominovic/sittly-wallpapers/main/assets/dddepth-${padding}.jpg?raw=true`;
             const tinyImageUrl = `https://raw.githubusercontent.com/JulianKominovic/sittly-wallpapers/main/assets/tiny/dddepth-${padding}.webp`;
             return {
               customChildren: /* @__PURE__ */ React.createElement(MemoizedImage, { imageUrl: tinyImageUrl, key: tinyImageUrl }),
