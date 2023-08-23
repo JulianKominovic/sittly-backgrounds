@@ -1,22 +1,32 @@
-import { BsFile } from 'react-icons/bs'
+import { BsCardImage, BsFile } from 'react-icons/bs'
 import {
-  type ExtensionItems,
+  type ExtensionPages,
   type ExtensionMetadata
 } from 'sittly-devtools/dist/types'
-const { register, api } = window.SittlyDevtools
-const { notifications } = api
-const { sendNotification } = notifications
-const items: ExtensionItems = () => [
+
+const { register, api, components } = window.SittlyDevtools
+const { Command } = components
+const { shell } = api
+const { setWallpaper } = shell
+const WALLPAPERS_LENGTH = 354
+const pages: ExtensionPages = [
   {
-    title: 'Template item',
-    description: 'Template item from template extension',
-    icon: <BsFile />,
-    onClick() {
-      sendNotification({
-        title: 'Template notification',
-        body: 'Template notification from template extension',
-        icon: 'face-smile'
-      })
+    name: 'Wallpapers',
+    route: '/wallpapers',
+    icon: <BsCardImage />,
+    description: 'Choose between 350 AI generated wallpapers',
+    component: () => {
+      return (
+        <Command.Grid
+          columns={4}
+          id="sittly-wallpapers"
+          items={Array.from({ length: WALLPAPERS_LENGTH }).map((_, index) => {
+            return {
+              onClick: () => setWallpaper(index)
+            }
+          })}
+        />
+      )
     }
   }
 ]
@@ -25,13 +35,13 @@ const items: ExtensionItems = () => [
  * @see docs.com
  */
 const metadata: ExtensionMetadata = {
-  name: 'Template',
-  description: 'Template extension',
-  icon: <BsFile />,
-  repoUrl: 'https://github.com/JulianKominovic/sittly-extension-template'
+  name: 'Wallpapers',
+  description: 'Choose between 350 AI generated wallpapers',
+  icon: <BsCardImage />,
+  repoUrl: 'https://github.com/JulianKominovic/sittly-wallpapers'
 }
 
 register({
-  items,
+  pages,
   metadata
 })
