@@ -37,7 +37,7 @@ const pages: ExtensionPages = [
       )
       return (
         <Command.Grid
-          columns={4}
+          columns={3}
           id="sittly-wallpapers"
           items={Array.from({ length: WALLPAPERS_LENGTH }).map((_, index) => {
             const padding = String(index + 1).padStart(3, '0')
